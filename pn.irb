@@ -1,0 +1,5 @@
+data = CSV.read("phone_numbers.csv", :headers => true)
+data.map {|r| r["phone_number"], r["phone_number", 2]}
+
+data.map {|r| r["phone_number", r.index("applicant")],
+              r["phone_number", r.index("spouse")]}

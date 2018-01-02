@@ -1,0 +1,11 @@
+require "csv"
+
+CSV.read("payment.csv")
+
+data = []
+
+CSV.foreach("payment.csv"){ |row| data << row if row[0] == "Taakshi Brown"}
+
+data
+
+
